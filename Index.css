@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fb; /* Light grey-blue background for the page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #08868a; /* Deep blue for a professional look */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.top-bar a:hover {
+    color: #5cf0f5; /* Light blue hover effect */
+}
+
+/* Logo Bar */
+.logo-bar {
+    background-color: #ffffff; /* White background for the logo bar */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #066c70; /* Light blue border for emphasis */
+}
+
+.logo img {
+    width: 52px;
+    height: 59px;
+    left: 10px;
+}
+
+.logo span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #078388 ; /* Deep blue for the hospital name */
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.logoDetails {
+    margin-left: 100px;
+}
+.logoDetails span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #078388 ;  /* You can adjust the color to match your design */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logoDetails1 {
+    margin-top: 5px;
+}
+.logoDetails1 span {
+    font-size: 40px;
+    font-weight: normal;
+    color: #b90802 ;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.service {
+    display: flex;
+    align-items: center;
+}
+
+.service img {
+    height: 40px;
+}
+
+.service span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #ff6600; /* Orange for the service number to make it stand out */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: #ffffff; /* White background for a clean look */
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #077579; /* Light blue border */
+}
+
+.nav-bar a {
+    color: #08868a; /* Deep blue text */
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+.nav-bar a:hover {
+    background-color: #7eb4b6; /* Light blue hover effect */
+    color: #ffffff; /* White text on hover */
+}
+
+.nav-bar .active {
+    background-color: #0f686d; /* Deep blue for the active tab */
+    color: #ffffff;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: center; /* Centering the main content */
+    align-items: center; /* Vertical centering */
+    min-height: 100vh; /* Ensure the content takes at least the full height of the viewport */
+    position: relative;
+    padding: 20px;
+}
+
+/* Fixed Advertisement Containers on Left and Right */
+.ad-container {
+    position: fixed;
+    top: 275px; /* Adds space from the top */
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgb(255, 255, 255);
+}
+
+.left-ad-container {
+    left: 30px; /* Adds space from the left side */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.317); /* Subtle shadow */
+}
+
+.right-ad-container {
+    right: 30px; /* Adds space from the right side */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.317); /* Subtle shadow */
+}
+
+.ad-images {
+    display: flex;
+    flex-direction: column;
+    transition: transform 1s ease-in-out;
+}
+
+.ad-images img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.ad-images img.visible {
+    display: block;
+}
+
+/* Welcome Box */
+.welcome-box {
+    text-align: center;
+    background-color: #ffffff; /* White background for the welcome box */
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.317); /* Subtle shadow */
+    padding: 40px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering the welcome box */
+}
+
+.welcome-box h1 {
+    color: #08868a; /* Deep blue for headings */
+    margin-bottom: 20px;
+}
+
+.welcome-box p {
+    font-size: 18px;
+    color: #666666; /* Grey for the paragraph text */
+}
+
+.welcome-box button {
+    background-color: #1d7d81; /* Orange for the button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Slightly rounded corners */
+}
+.welcome-box button :hover
+{
+    color: #fcfdfd; /* Light blue hover effect */
+}
+/* p.css */
+
+/* Style for the Suggest Hospital button */
+button {
+    background-color: #fcfcfc; /* Primary blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #70acae; /* Darker shade of blue */
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
